@@ -1,22 +1,18 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main()
+void funkcja(float a)
 {
-	float a, b, wynik;
-	scanf("%f", &a);
-	scanf("%f", &b);
-	printf("Pierwsza liczba to:%f \n",a);
-	printf("Druga liczba to:%f \n",b);
-	if(a == 0 ||  b == 0)
-	{	
-		printf("Nie dzielimy przez 0!");
-    }
-	else
-	 {
-		wynik=a/b;
-		printf("Otrzymany wynik to:%f", wynik); 	
-	 	
-	 }
+	printf("Wynik funkcji f(n)=(n/2)+2 to:%f", (a/2)+2 );
+	
+}
+// w moim programie a==n
+
+int main(){
+	float a;
+	printf("Podaj liczbe: ");
+	scanf("%f",&a);
+	funkcja(a);
 	
 	
 	
